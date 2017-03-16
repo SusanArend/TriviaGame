@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cool Computer Quiz!</title>
+
+    <!-- Linking to CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+  
+  <body>
+	
+	<h1>Cool Computer Quiz!</h1>
+
+
+	<div id = "timer-text">Time Remaining: </div>
+	<time id = "timer-number"></time>
+
+		<br><br>
+
+	<div id = "correct">Correct Answers: </div>
+	<div id = "unanswered">Unanswered Questions: </div>
+	<div id = "answered">Answered Questions: </div>
+	
+		<form>
+
+
+			<ol>
+				<li class = "questions">When was the first Apple computer released?</li>
+				<!-- 1976 -->
+
+					<input type="radio" name="q1" class = "js-correct" value="1975">1975<br>
+					<input type="radio" name="q1" class = "js-incorrect" value="2000">2000<br>
+					<input type="radio" name="q1" class = "js-incorrect" value="1980">1980<br>
+					<input type="radio" name="q1" class = "js-incorrect" value="1976">2000<br>
+
+				<br>
+
+				<li class = "questions">In what year did Nintendo release its first game console in North America?</li>
+				<!-- 1985 -->
+
+					<input type="radio" name="q2" class = "js-incorrect" value="1975">1975<br>
+					<input type="radio" name="q2" class = "js-correct" value="1985">1985<br>
+					<input type="radio" name="q2" class = "js-incorrect" value="2000">2000<br>
+					<input type="radio" name="q2" class = "js-incorrect" value="2000">2000<br>
+
+				<br>
+
+				<li class = "questions">Steve Jobs, Steve Wozniak, and Ronald Wayne founded what company in 1976?</li>
+				<!-- Apple Computers, Inc. -->
+
+					<input type="radio" name="q3" class = "js-incorrect" value="microsoft">Microsoft<br>
+					<input type="radio" name="q3" class = "js-incorrect" value="hewlettpackard">Hewlett Packard<br>
+					<input type="radio" name="q3" class = "js-correct" value="appleinc">Apple Computers, Inc.<br>
+					<input type="radio" name="q3" class = "js-incorrect" value="apple">Apple<br>
+
+
+				<br>
+
+				<li class = "questions">What year was Facebook founded?</li>
+					<!-- 2004 -->
+
+					<input type="radio" name="q4" class = "js-incorrect" value="2000">2000<br>
+					<input type="radio" name="q4" class = "js-incorrect" value="1998">1998<br>
+					<input type="radio" name="q4" class = "js-incorrect" value="2006">2006<br>
+					<input type="radio" name="q4" class = "js-correct" value="2004">2004<br>
+
+				<br>
+
+				<li class = "questions">In computer science, what does GUI stand for?</li>
+				<!-- Graphic User Interface -->
+
+					<input type="radio" name="q5" class = "js-incorrect" value="greatly">Greatly Upsetting Interface<br>
+					<input type="radio" name="q5" class = "js-incorrect" value="gorgeous">Gorgeous Underling Interlude<br>
+					<input type="radio" name="q5" class = "js-correct" value="graphic">Graphic User Interface<br>
+					<input type="radio" name="q5" class = "js-incorrect" value="gullible">Gullible Unfortunately Incident<br>
+
+				<br>
+
+				<li class = "questions">In the world of video games, what does NES stand for?</li>
+				<!-- Nintendo Entertainment System -->
+
+					<input type="radio" name="q6" class = "js-incorrect" value="nifty">Nifty Entertainment System<br>
+					<input type="radio" name="q6" class = "js-correct" value="nintendo">Nintendo Entertainment System<br>
+					<input type="radio" name="q6" class = "js-incorrect" value="nearly">Nearly Entertaining System<br>
+					<input type="radio" name="q6" class = "js-incorrect" value="not">Not Entertaining System<br>
+
+				<br>
+
+				<li class = "questions">HP, Microsoft, and Apple all started in a what?</li>
+				<!-- a garage -->
+
+					<input type="radio" name="q7" class = "js-correct" value="garage">Garage<br>
+					<input type="radio" name="q7" class = "js-incorrect" value="kitchen">Kitchen<br>
+					<input type="radio" name="q7" class = "js-incorrect" value="bathroom">Bathroom<br>
+					<input type="radio" name="q7" class = "js-incorrect" value="bathtub">Bathtub<br>
+
+				<br>
+
+				<li class = "questions">What do the letter HTML stand for?</li>
+				<!-- Hypertext Markup Language -->
+
+					<input type="radio" name="q8" class = "js-incorrect" value="hilarious">Hilarious Text Markup Langnuage<br>
+					<input type="radio" name="q8" class = "js-correct" value="hypertext">Hypertext Markup Language<br>
+					<input type="radio" name="q8" class = "js-incorrect" value="helpful">Helpful Text Markup Language<br>
+					<input type="radio" name="q8" class = "js-incorrect" value="horrible">Horrible Text Markup Langauge<br>
+
+				<br>
+
+				<li class = "questions">What was the highest selling single model of personal computer ever?</li>
+				<!-- The Commodore 64 -->
+
+					<input type="radio" name="q9" class = "js-incorrect" value="route">The Route 66<br>
+					<input type="radio" name="q9" class = "js-incorrect" value="nintendo">The Nintendo 64<br>
+					<input type="radio" name="q9" class = "js-correct" value="commodore">The Commodore 64<br>
+					<input type="radio" name="q9" class = "js-incorrect" value="hello">The Hello World<br>
+
+				<br>
+
+				<li class = "questions">Who is credited with inventing the first mechanical computer?</li>
+				<!-- Charles Babbage -->
+
+					<input type="radio" name="q10" class = "js-incorrect" value="chaplin">Charles Chaplin<br>
+					<input type="radio" name="q10" class = "js-incorrect" value="parker">Charles Parker<br>
+					<input type="radio" name="q10" class = "js-incorrect" value="barkley">Charles Barkley<br>
+					<input type="radio" name="q10" class = "js-correct" value="babbage">Charles Babbage<br>
+
+				<br>
+			</ol>
+
+		</form>
+
+<!-- linking jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Linking to Javascript -->
+<script src="assets/javascript/app.js"></script>
+
+  </body>
+</html>
